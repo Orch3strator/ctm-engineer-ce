@@ -63,6 +63,8 @@ engineer -f
 engineer.exe -f
 ```
 
+#### Result
+
 Example: [ctm-folders.json](example/ctm-folders.json)
 
 #### Filter
@@ -95,6 +97,10 @@ engineer -m
 engineer.exe -m
 ```
 
+#### Result
+
+Example: [ctm-monitoring.json](example/ctm-monitoring.json)
+
 ### Help
 
 A log file is written to: 
@@ -125,12 +131,14 @@ engineer -e -f <filter-name>
 engineer.exe -e -f <filter-name>
 ```
 
-Example: [ctm-folders.json](example/ctm-folders.json)
-
 
 #### Filter
 
 The filter being applied is based on the engineer.json config file
+
+Example: [ctm-folders.json](example/ctm-folders.json)
+
+#### Result
 
 Example: [<filter-name>ctm-expert.json](example/privacy_guard-ctm-expert.json)
 
