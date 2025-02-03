@@ -5,17 +5,88 @@ Control-M Engineer Community Edition
 
 ### Configuration
 
-The CTM Engineer is driven by the config file located:
+The CTM Engineer is driven by the command arguments and a config file located:
 - Windows: C:\ProgramData\engineer\configs
 - Linux: /home/${USER}/.config/engineer/configs/engineer.json
 
 Example: [engineer.json](example/engineer.json)
 
+#### Requirements
+
+- Python 3.1x
+- Control-M Automation API token
+- Network access to Control-M Enterprise Manager
+
 ### Inventory
+
+Get an inventory of your Control-M resources, focused on Managed File Transfer.
+
+A report is svaed to:
+- C:\ProgramData\engineer\data\ctm-inventory.json
+- /home/${USER}/.config/engineer/data/ctm-inventory.json
+
+
+``` markdown title="Linux"
+engineer -i
+```
+
+``` markdown title="Windows"
+engineer.exe -i
+```
 
 ### Monitoring
 
+Get the agent and CCP status of your Control-M Servers, focused on Managed File Transfer.
+
+- Get List of Control-M Servers
+- For each Server, get:
+    - Agents
+    - CCP
+- Ping each Agent
+- Test CCP with live Agent
+
+A report is svaed to:
+- C:\ProgramData\engineer\data\ctm-monitoring.json
+- /home/${USER}/.config/engineer/data/ctm-monitoring.json
+
+
+``` markdown title="Linux"
+engineer -m
+```
+
+``` markdown title="Windows"
+engineer.exe -m
+```
+
+### Help
+
+A log file is written to: 
+- C:\ProgramData\engineer\logs\engineer.log
+- /home/${USER}/.config/engineer/logs/engineer.log
+
+``` markdown title="Linux"
+engineer -h
+```
+
+``` markdown title="Windows"
+engineer.exe -h
+```
+
 ### Expert
+
+The expert mode combines "monitoring" and "Folders".
+
+A report is svaed to:
+- C:\ProgramData\engineer\data\<filter-name>ctm-expert.json
+- /home/${USER}/.config/engineer/data/<filter-name>ctm-expert.json
+
+``` markdown title="Linux"
+engineer -e -f <filter-name>
+```
+
+``` markdown title="Windows"
+engineer.exe -e -f <filter-name>
+```
 
 
 ## Control-M AAPI
