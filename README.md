@@ -29,8 +29,4 @@ ctm deploy connectionprofiles:centralized::get -s <search query>
 ```
 
 | Field	| Description | Examples |
-| type | Type of connection profile, one of the following options:
-         - Database
-         - FileTransfer
-         - AWS
-         - Azure | |
+| type | Type of connection profile | |
