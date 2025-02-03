@@ -14,6 +14,6 @@ Control-M Engineer Community Edition
 
 ### Servers
 
-```
+``` title="Get all Control-M Servers"
 ctm config servers::get
 ```
