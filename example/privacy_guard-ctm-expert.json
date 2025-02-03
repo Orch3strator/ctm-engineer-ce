@@ -1,0 +1,106 @@
+{
+    "Uuid": "6e5949b8-990c-45ce-b5b9-f41147d7fa41",
+    "Date": "2025-02-03 14:32:55",
+    "File": "privacy_guard-ctm-expert.json",
+    "Platform": "Windows",
+    "Hostname": "demo",
+    "Url": "https://ctm-lin-em.demo.local/automation-api",
+    "Login": true,
+    "Duration": 17,
+    "Filter": "PRIVACY_GUARD",
+    "Jobs": [
+        {
+            "Server": "ctm-lin-srv",
+            "Parent": "ZZM_CAP_GPG_DECRYPT",
+            "Name": "ZZM Data Service GPG Transfer",
+            "Type": "Job:FileTransfer",
+            "Agent": {
+                "name": "ctm-lin-em.demo.local",
+                "status": true
+            },
+            "Hostgroup": {
+                "name": "ZZM_AGT_01"
+            },
+            "CCP": {
+                "Type": "FileTransfer",
+                "Source": {
+                    "name": "ZZM_LFS_AGT",
+                    "status": true,
+                    "message": "ConnectionProfile ZZM_LFS_AGT successfully validated on agent ctm-lin-em.demo.local"
+                },
+                "Destination": {
+                    "name": "SFTP_HISEC_E2SRV",
+                    "status": true,
+                    "message": "ConnectionProfile SFTP_HISEC_E2SRV successfully validated on agent ctm-lin-em.demo.local"
+                }
+            },
+            "Cloud": {
+                "S3BucketName": null,
+                "AzureContainerNameDest": null,
+                "GCSBucketNameDest": null
+            }
+        },
+        {
+            "Server": "ctm-lin-srv",
+            "Parent": "ZZM_CAP_GPG_ENCRYPT",
+            "Name": "ZZM Data Service GPG Transfer",
+            "Type": "Job:FileTransfer",
+            "Agent": {
+                "name": "ctm-lin-srv.demo.local",
+                "status": true
+            },
+            "Hostgroup": {
+                "name": "ZZM_AGT_02"
+            },
+            "CCP": {
+                "Type": "FileTransfer",
+                "Source": {
+                    "name": "ZZM_LFS_AGT",
+                    "status": true,
+                    "message": "ConnectionProfile ZZM_LFS_AGT successfully validated on agent ctm-lin-srv.demo.local"
+                },
+                "Destination": {
+                    "name": "ZZM_LFS_AGT",
+                    "status": true,
+                    "message": "ConnectionProfile ZZM_LFS_AGT successfully validated on agent ctm-lin-srv.demo.local"
+                }
+            },
+            "Cloud": {
+                "S3BucketName": null,
+                "AzureContainerNameDest": null,
+                "GCSBucketNameDest": null
+            }
+        },
+        {
+            "Server": "ctm-lin-srv",
+            "Parent": "ZZM_CAP_GPG_ENCRYPT",
+            "Name": "ZZM Data Service Transfer",
+            "Type": "Job:FileTransfer",
+            "Agent": {
+                "name": "ctm-lin-srv.demo.local",
+                "status": true
+            },
+            "Hostgroup": {
+                "name": "ZZM_AGT_02"
+            },
+            "CCP": {
+                "Type": "FileTransfer",
+                "Source": {
+                    "name": "ZZM_LFS_AGT",
+                    "status": true,
+                    "message": "ConnectionProfile ZZM_LFS_AGT successfully validated on agent ctm-lin-srv.demo.local"
+                },
+                "Destination": {
+                    "name": "SFTP_HISEC_S2SRV",
+                    "status": true,
+                    "message": "ConnectionProfile SFTP_HISEC_S2SRV successfully validated on agent ctm-lin-srv.demo.local"
+                }
+            },
+            "Cloud": {
+                "S3BucketName": null,
+                "AzureContainerNameDest": null,
+                "GCSBucketNameDest": null
+            }
+        }
+    ]
+}

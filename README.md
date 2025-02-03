@@ -125,11 +125,14 @@ engineer -e -f <filter-name>
 engineer.exe -e -f <filter-name>
 ```
 
+Example: [ctm-folders.json](example/ctm-folders.json)
+
+
 #### Filter
 
 The filter being applied is based on the engineer.json config file
 
-Example: [engineer.json](example/engineer.json)
+Example: [<filter-name>ctm-expert.json](example/privacy_guard-ctm-expert.json)
 
 ## Control-M AAPI
 
