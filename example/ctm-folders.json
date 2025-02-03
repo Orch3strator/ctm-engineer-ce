@@ -1,0 +1,55 @@
+{
+    "Uuid": "60d952f0-3cb9-46b7-871c-4253c6517fbe",
+    "Date": "2025-02-03 14:28:16",
+    "File": "ctm-folders.json",
+    "Platform": "Windows",
+    "Hostname": "demo",
+    "Url": "https://ctm-lin-em.demo.local/automation-api",
+    "Login": true,
+    "Duration": 0,
+    "Filter": "PRIVACY_GUARD",
+    "Jobs": [
+        {
+            "Server": "ctm-lin-srv",
+            "Parent": "ZZM_CAP_GPG_DECRYPT",
+            "Name": "ZZM Data Service GPG Transfer",
+            "Type": "Job:FileTransfer",
+            "Agent": "ZZM_AGT_01",
+            "ConnectionProfileSrc": "ZZM_LFS_AGT",
+            "ConnectionProfileDest": "SFTP_HISEC_E2SRV",
+            "Cloud": {
+                "S3BucketName": null,
+                "AzureContainerNameDest": null,
+                "GCSBucketNameDest": null
+            }
+        },
+        {
+            "Server": "ctm-lin-srv",
+            "Parent": "ZZM_CAP_GPG_ENCRYPT",
+            "Name": "ZZM Data Service GPG Transfer",
+            "Type": "Job:FileTransfer",
+            "Agent": "ZZM_AGT_02",
+            "ConnectionProfileSrc": "ZZM_LFS_AGT",
+            "ConnectionProfileDest": "ZZM_LFS_AGT",
+            "Cloud": {
+                "S3BucketName": null,
+                "AzureContainerNameDest": null,
+                "GCSBucketNameDest": null
+            }
+        },
+        {
+            "Server": "ctm-lin-srv",
+            "Parent": "ZZM_CAP_GPG_ENCRYPT",
+            "Name": "ZZM Data Service Transfer",
+            "Type": "Job:FileTransfer",
+            "Agent": "ZZM_AGT_02",
+            "ConnectionProfileSrc": "ZZM_LFS_AGT",
+            "ConnectionProfileDest": "SFTP_HISEC_S2SRV",
+            "Cloud": {
+                "S3BucketName": null,
+                "AzureContainerNameDest": null,
+                "GCSBucketNameDest": null
+            }
+        }
+    ]
+}

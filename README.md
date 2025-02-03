@@ -1,5 +1,6 @@
-# ctm-engineer-ce
-Control-M Engineer Community Edition
+# CTM Engineer
+
+Control-M Engineer
 
 ## Managed File Transfer
 
@@ -16,6 +17,17 @@ Example: [engineer.json](example/engineer.json)
 - Python 3.1x
 - Control-M Automation API token
 - Network access to Control-M Enterprise Manager
+
+#### Build and Package
+
+``` markdown title="Linux"
+pyinstaller --clean engineer.lin.spec --noconfirm
+```
+
+``` markdown title="Windows"
+pyinstaller --clean engineer.win.spec --noconfirm
+```
+
 
 ### Inventory
 
@@ -39,17 +51,25 @@ engineer.exe -i
 Get an inventory of your Control-M Folders, focused on Managed File Transfer.
 
 A report is svaed to:
-- C:\ProgramData\engineer\data\ctm-inventory.json
-- /home/${USER}/.config/engineer/data/ctm-inventory.json
+- C:\ProgramData\engineer\data\ctm-folders.json
+- /home/${USER}/.config/engineer/data/ctm-folders.json
 
 
 ``` markdown title="Linux"
-engineer -i
+engineer -f
 ```
 
 ``` markdown title="Windows"
-engineer.exe -i
+engineer.exe -f
 ```
+
+Example: [ctm-folders.json](example/ctm-folders.json)
+
+#### Filter
+
+The filter being applied is based on the engineer.json config file
+
+Example: [engineer.json](example/engineer.json)
 
 ### Monitoring
 
@@ -105,6 +125,11 @@ engineer -e -f <filter-name>
 engineer.exe -e -f <filter-name>
 ```
 
+#### Filter
+
+The filter being applied is based on the engineer.json config file
+
+Example: [engineer.json](example/engineer.json)
 
 ## Control-M AAPI
 
