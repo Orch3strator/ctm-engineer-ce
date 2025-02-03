@@ -28,5 +28,6 @@ ctm config servers::get
 ctm deploy connectionprofiles:centralized::get -s <search query>
 ```
 
-| Field	| Description | Examples |
-| type | Type of connection profile | |
+| Field	| Description |
+| ------------- | ------------- |
+| type | Type of connection profile |
