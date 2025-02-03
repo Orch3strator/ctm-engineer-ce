@@ -17,3 +17,20 @@ Control-M Engineer Community Edition
 ``` markdown title="Get all Control-M Servers"
 ctm config servers::get
 ```
+
+``` markdown title="Get all Control-M Servers"
+ctm config servers::get
+```
+
+### Connection Profiles
+
+``` markdown title="Get centralized deployed connection profile"
+ctm deploy connectionprofiles:centralized::get -s <search query>
+```
+
+| Field	| Description | Examples |
+| type | Type of connection profile, one of the following options:
+         - Database
+         - FileTransfer
+         - AWS
+         - Azure | |
