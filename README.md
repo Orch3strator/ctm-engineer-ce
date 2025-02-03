@@ -29,11 +29,11 @@ pyinstaller --clean engineer.win.spec --noconfirm
 ```
 
 
-### Inventory
+### Inventory Function
 
 Get an inventory of your Control-M resources, focused on Managed File Transfer.
 
-A report is svaed to:
+A report is saved to:
 - C:\ProgramData\engineer\data\ctm-inventory.json
 - /home/${USER}/.config/engineer/data/ctm-inventory.json
 
@@ -46,11 +46,11 @@ engineer -i
 engineer.exe -i
 ```
 
-#### Folders
+#### Folders Function
 
 Get an inventory of your Control-M Folders, focused on Managed File Transfer.
 
-A report is svaed to:
+A report is saved to:
 - C:\ProgramData\engineer\data\ctm-folders.json
 - /home/${USER}/.config/engineer/data/ctm-folders.json
 
@@ -73,7 +73,7 @@ The filter being applied is based on the engineer.json config file
 
 Example: [engineer.json](example/engineer.json)
 
-### Monitoring
+### Monitoring Function
 
 Get the agent and CCP status of your Control-M Servers, focused on Managed File Transfer.
 
@@ -84,7 +84,7 @@ Get the agent and CCP status of your Control-M Servers, focused on Managed File 
 - Ping each Agent
 - Test CCP with live Agent
 
-A report is svaed to:
+A report is saved to:
 - C:\ProgramData\engineer\data\ctm-monitoring.json
 - /home/${USER}/.config/engineer/data/ctm-monitoring.json
 
@@ -101,7 +101,7 @@ engineer.exe -m
 
 Example: [ctm-monitoring.json](example/ctm-monitoring.json)
 
-### Help
+### Help Function
 
 A log file is written to: 
 - C:\ProgramData\engineer\logs\engineer.log
@@ -115,11 +115,11 @@ engineer -h
 engineer.exe -h
 ```
 
-### Expert
+### Expert Function
 
 The expert mode combines "monitoring" and "Folders".
 
-A report is svaed to:
+A report is saved to:
 - C:\ProgramData\engineer\data\<filter-name>ctm-expert.json
 - /home/${USER}/.config/engineer/data/<filter-name>ctm-expert.json
 
