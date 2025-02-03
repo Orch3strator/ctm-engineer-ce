@@ -1,0 +1,107 @@
+{
+    "DEFAULT": {
+        "version": 2.1,
+        "loglevel": "debug",
+        "env_name": "trader",
+        "insecureRequestWarning": "true",
+        "crypto_file": "engineer.bin",
+        "config_file": "engineer.json",
+        "config_folder": "configs",
+        "log_file": "engineer.log",
+        "log_folder": "logs",
+        "data_folder": "data",
+        "run_folder": "run",
+        "database_platform": "postgresql",
+        "template_folder": "templates",
+        "demo": false,
+        "debug": {
+            "general": true,
+            "api": false,
+            "data": false,
+            "functions": false,
+            "advanced": false,
+            "qa": false,
+            "analysis": false
+        },
+        "ssl": {
+            "cert_folder": "/etc/certs",
+            "ca": "ca.pem",
+            "private": "engineer.pem",
+            "public": "engineer.signed.pem"
+        }
+    },
+    "CTM": {
+        "aapi": "",
+        "host": "ctm.demo.local",
+        "port": "443",
+        "environment": "engineer",
+        "em": "ctm-lin-em.demo.local",
+        "ssl": {
+            "InsecureRequestWarning": false
+        },
+        "mode": {
+            "inventory": false,
+            "monitoring": true
+        }
+    },
+    "CCP": [
+        {
+            "server": "ctm-lin-srv",
+            "agents": "ctm-lin-agt.demo.local",
+            "profiles": "CLD_AWS_S3, CLD_AZURE, CLD_GCS, CLD_HISEC_E2SRV, CLD_HISEC_H2EM, CLD_HISEC_H2HUB, CLD_HISEC_H2SRV, CLD_HISEC_S2SRV, CLD_LFS, CLD_NIL_HUB, CLD_SHRPNT"
+        },
+        {
+            "server": "ctm-lin-srv",
+            "agents": "ctm-lin-em.demo.local",
+            "profiles": "SFTP_HISEC_E2AGT, SFTP_HISEC_E2EM, SFTP_HISEC_E2GTW, SFTP_HISEC_E2HUB, SFTP_HISEC_E2SRV, SFTP_HISEC_FTG_EM"
+        },
+        {
+            "server": "ctm-lin-srv",
+            "agents": "ctm-lin-srv.demo.local",
+            "profiles": "SFTP_HISEC_S2EM, SFTP_HISEC_S2GTW, SFTP_HISEC_S2HUB, SFTP_HISEC_S2SRV"
+        },
+        {
+            "server": "ctm-lin-srv",
+            "agents": "ctm-lin-hub.demo.local",
+            "profiles": "SFTP_HISEC_FTG_HUB, SFTP_HISEC_FTG_SRV, SFTP_HISEC_H2AGT, SFTP_HISEC_H2EM, SFTP_HISEC_H2GTW, SFTP_HISEC_H2HUB, SFTP_HISEC_H2SRV"
+        },
+        {
+            "server": "ctm-lin-srv",
+            "agents": "ctm-lin-srv.demo.local, ctm-lin-em.demo.local, ctm-lin-hub.demo.local",
+            "profiles": "ZZM_AWS_S3, ZZM_AZURE, ZZM_GCS"
+        },
+        {
+            "server": "ctm-lin-srv",
+            "agents": "ctm-lin-hub.demo.local",
+            "profiles": "AS2_DEMO"
+        }
+    ],
+    "MFT": {},
+    "MFTE": {
+        "servers": [
+            {
+                "server": "ctm-lin-srv",
+                "site": "",
+                "pwd": ""
+            }
+        ]
+    },
+    "FILTERS": {
+        "types": [
+            {
+                "type": "folders",
+                "name": "ZZM",
+                "folder": "ZZM_UC_MULTI*",
+                "server": "ctm-lin-srv",
+                "agentMode": "hostgroups"
+            },
+            {
+                "type": "folders",
+                "name": "PRIVACY_GUARD",
+                "folder": "ZZM_UC_PRIVACY_GUARD",
+                "server": "ctm-lin-srv",
+                "agentMode": "hostgroups"
+            }
+        ]
+    }
+}

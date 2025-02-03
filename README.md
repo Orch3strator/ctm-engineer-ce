@@ -3,6 +3,14 @@ Control-M Engineer Community Edition
 
 ## Managed File Transfer
 
+### Configuration
+
+The CTM Engineer is driven by the config file located:
+- Windows: C:\ProgramData\engineer\configs
+- Linux: /home/${USER}/.config/engineer/configs/engineer.json
+
+Example: [engineer.json](example/engineer.json)
+
 ### Inventory
 
 ### Monitoring
@@ -16,6 +24,13 @@ Control-M Engineer Community Edition
 
 - The deploy service allows you to transfer job and configuration definitions to Control-M. Once a job is deployed, it will be scheduled by Control-M according to its scheduling criteria and dependencies. The deploy overwrites any existing definition of the same name. 
 
+### Deploy Service
+
+The deploy service allows you to transfer job and configuration definitions to Control-M. 
+
+### Config Service
+
+The config service allows you to configure the Control-M environment.
 
 ## Inventory
 
