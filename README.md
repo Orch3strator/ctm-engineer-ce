@@ -34,6 +34,23 @@ engineer -i
 engineer.exe -i
 ```
 
+#### Folders
+
+Get an inventory of your Control-M Folders, focused on Managed File Transfer.
+
+A report is svaed to:
+- C:\ProgramData\engineer\data\ctm-inventory.json
+- /home/${USER}/.config/engineer/data/ctm-inventory.json
+
+
+``` markdown title="Linux"
+engineer -i
+```
+
+``` markdown title="Windows"
+engineer.exe -i
+```
+
 ### Monitoring
 
 Get the agent and CCP status of your Control-M Servers, focused on Managed File Transfer.
@@ -181,6 +198,24 @@ ctm deploy connectionprofiles:local::get -s <search query>
 
 Filter applied: type=FileTransfer
 
+
+### Deployed Folders
+
+The deploy folders::get command enables you to get details of folders that match a search criteria. 
+
+``` markdown title="Get centralized deployed connection profile"
+deploy folders::get -s <search query>
+```
+
+| Field	| Description |
+| ------------- | ------------- |
+| server | Name of Control-M/Server |
+| agent | Name of Control-M/Agent |
+| folder | Control-M Folder |
+| job | Control-M Job |
+| ctm | Control-M Enterprise Manager |
+
+Filter applied: folder=<filter-name>
 
 ## Monitoring
 
