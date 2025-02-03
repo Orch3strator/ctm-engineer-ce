@@ -46,7 +46,7 @@ engineer -i
 engineer.exe -i
 ```
 
-#### Folders Function
+### Folders Function
 
 Get an inventory of your Control-M Folders, focused on Managed File Transfer.
 
@@ -72,6 +72,27 @@ Example: [ctm-folders.json](example/ctm-folders.json)
 The filter being applied is based on the engineer.json config file
 
 Example: [engineer.json](example/engineer.json)
+
+``` markdown title="Filters"
+"FILTERS": {
+        "types": [
+            {
+                "type": "folders",
+                "name": "ZZM",
+                "folder": "ZZM_UC_MULTI*",
+                "server": "ctm-lin-srv",
+                "agentMode": "hostgroups"
+            },
+            {
+                "type": "folders",
+                "name": "PRIVACY_GUARD",
+                "folder": "ZZM_UC_PRIVACY_GUARD",
+                "server": "ctm-lin-srv",
+                "agentMode": "hostgroups"
+            }
+        ]
+    }
+```
 
 ### Monitoring Function
 
