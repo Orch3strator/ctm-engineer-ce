@@ -12,13 +12,13 @@ It provides inventory checks, workflow validation, and monitoring to help the op
 
 ✅ Inventory Management – Retrieve and review Control-M folders, workflows, and their dependencies.
 
-✅ Workflow Validation – Verify that required external connections (server, agents and centralized connection profiles) are operational.
+✅ Folder Inventory – Get a folder's **Managed File Transfer** job dependencies.
 
 ✅ Agent Availability Check – Ensure that Control-M agents executing the workflows are up and running.
 
-✅ Basic Monitoring – Track workflow execution and status.
+✅ Basic Monitoring – Track workflow dependencies and status.
 
-✅ Expert Mode – Provides deep monitoring, validating connections, agents, and workflow dependencies in a single execution.
+✅ Expert Mode – Provides deep monitoring, validating server, connections, agents, and workflow dependencies in a single execution.
 
 ### Use Case
 
