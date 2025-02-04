@@ -1,1 +1,430 @@
-{}
+{
+    "Uuid": "14b99a45-4ac6-424e-96c5-ab9e4cfa3cc9",
+    "Date": "2025-02-03 17:07:16",
+    "File": "ctm-monitoring.json",
+    "Platform": "Windows",
+    "Hostname": "demo",
+    "Url": "https://ctm.demo.local/automation-api",
+    "Login": true,
+    "Duration": 159,
+    "CCP": [
+        {
+            "server": "ctm-lin-srv",
+            "agent": {
+                "name": "ctm-lin-agt.demo.local",
+                "status": true
+            },
+            "type": "FileTransfer",
+            "name": "CLD_AWS_S3",
+            "status": false,
+            "message": "Error when Test Centralized Connection Profile"
+        },
+        {
+            "server": "ctm-lin-srv",
+            "agent": {
+                "name": "ctm-lin-agt.demo.local",
+                "status": true
+            },
+            "type": "FileTransfer",
+            "name": "CLD_AZURE",
+            "status": false,
+            "message": "Error when Test Centralized Connection Profile"
+        },
+        {
+            "server": "ctm-lin-srv",
+            "agent": {
+                "name": "ctm-lin-agt.demo.local",
+                "status": true
+            },
+            "type": "FileTransfer",
+            "name": "CLD_GCS",
+            "status": false,
+            "message": "Error when Test Centralized Connection Profile"
+        },
+        {
+            "server": "ctm-lin-srv",
+            "agent": {
+                "name": "ctm-lin-agt.demo.local",
+                "status": true
+            },
+            "type": "FileTransfer",
+            "name": "CLD_HISEC_E2SRV",
+            "status": false,
+            "message": "Error when Test Centralized Connection Profile"
+        },
+        {
+            "server": "ctm-lin-srv",
+            "agent": {
+                "name": "ctm-lin-agt.demo.local",
+                "status": true
+            },
+            "type": "FileTransfer",
+            "name": "CLD_HISEC_H2EM",
+            "status": false,
+            "message": "Error when Test Centralized Connection Profile"
+        },
+        {
+            "server": "ctm-lin-srv",
+            "agent": {
+                "name": "ctm-lin-agt.demo.local",
+                "status": true
+            },
+            "type": "FileTransfer",
+            "name": "CLD_HISEC_H2HUB",
+            "status": false,
+            "message": "Error when Test Centralized Connection Profile"
+        },
+        {
+            "server": "ctm-lin-srv",
+            "agent": {
+                "name": "ctm-lin-agt.demo.local",
+                "status": true
+            },
+            "type": "FileTransfer",
+            "name": "CLD_HISEC_H2SRV",
+            "status": false,
+            "message": "Error when Test Centralized Connection Profile"
+        },
+        {
+            "server": "ctm-lin-srv",
+            "agent": {
+                "name": "ctm-lin-agt.demo.local",
+                "status": true
+            },
+            "type": "FileTransfer",
+            "name": "CLD_HISEC_S2SRV",
+            "status": false,
+            "message": "Error when Test Centralized Connection Profile"
+        },
+        {
+            "server": "ctm-lin-srv",
+            "agent": {
+                "name": "ctm-lin-agt.demo.local",
+                "status": true
+            },
+            "type": "FileTransfer",
+            "name": "CLD_LFS",
+            "status": false,
+            "message": "Error when Test Centralized Connection Profile"
+        },
+        {
+            "server": "ctm-lin-srv",
+            "agent": {
+                "name": "ctm-lin-agt.demo.local",
+                "status": true
+            },
+            "type": "FileTransfer",
+            "name": "CLD_NIL_HUB",
+            "status": false,
+            "message": "Error when Test Centralized Connection Profile"
+        },
+        {
+            "server": "ctm-lin-srv",
+            "agent": {
+                "name": "ctm-lin-agt.demo.local",
+                "status": true
+            },
+            "type": "FileTransfer",
+            "name": "CLD_SHRPNT",
+            "status": false,
+            "message": "Error when Test Centralized Connection Profile"
+        },
+        {
+            "server": "ctm-lin-srv",
+            "agent": {
+                "name": "ctm-lin-em.demo.local",
+                "status": true
+            },
+            "type": "FileTransfer",
+            "name": "SFTP_HISEC_E2AGT",
+            "status": false,
+            "message": "Error when Test Centralized Connection Profile"
+        },
+        {
+            "server": "ctm-lin-srv",
+            "agent": {
+                "name": "ctm-lin-em.demo.local",
+                "status": true
+            },
+            "type": "FileTransfer",
+            "name": "SFTP_HISEC_E2EM",
+            "status": true,
+            "message": "ConnectionProfile SFTP_HISEC_E2EM successfully validated on agent ctm-lin-em.demo.local"
+        },
+        {
+            "server": "ctm-lin-srv",
+            "agent": {
+                "name": "ctm-lin-em.demo.local",
+                "status": true
+            },
+            "type": "FileTransfer",
+            "name": "SFTP_HISEC_E2GTW",
+            "status": true,
+            "message": "ConnectionProfile SFTP_HISEC_E2GTW successfully validated on agent ctm-lin-em.demo.local"
+        },
+        {
+            "server": "ctm-lin-srv",
+            "agent": {
+                "name": "ctm-lin-em.demo.local",
+                "status": true
+            },
+            "type": "FileTransfer",
+            "name": "SFTP_HISEC_E2HUB",
+            "status": true,
+            "message": "ConnectionProfile SFTP_HISEC_E2HUB successfully validated on agent ctm-lin-em.demo.local"
+        },
+        {
+            "server": "ctm-lin-srv",
+            "agent": {
+                "name": "ctm-lin-em.demo.local",
+                "status": true
+            },
+            "type": "FileTransfer",
+            "name": "SFTP_HISEC_E2SRV",
+            "status": true,
+            "message": "ConnectionProfile SFTP_HISEC_E2SRV successfully validated on agent ctm-lin-em.demo.local"
+        },
+        {
+            "server": "ctm-lin-srv",
+            "agent": {
+                "name": "ctm-lin-em.demo.local",
+                "status": true
+            },
+            "type": "FileTransfer",
+            "name": "SFTP_HISEC_FTG_EM",
+            "status": true,
+            "message": "ConnectionProfile SFTP_HISEC_FTG_EM successfully validated on agent ctm-lin-em.demo.local"
+        },
+        {
+            "server": "ctm-lin-srv",
+            "agent": {
+                "name": "ctm-lin-srv.demo.local",
+                "status": true
+            },
+            "type": "FileTransfer",
+            "name": "SFTP_HISEC_S2EM",
+            "status": true,
+            "message": "ConnectionProfile SFTP_HISEC_S2EM successfully validated on agent ctm-lin-srv.demo.local"
+        },
+        {
+            "server": "ctm-lin-srv",
+            "agent": {
+                "name": "ctm-lin-srv.demo.local",
+                "status": true
+            },
+            "type": "FileTransfer",
+            "name": "SFTP_HISEC_S2GTW",
+            "status": true,
+            "message": "ConnectionProfile SFTP_HISEC_S2GTW successfully validated on agent ctm-lin-srv.demo.local"
+        },
+        {
+            "server": "ctm-lin-srv",
+            "agent": {
+                "name": "ctm-lin-srv.demo.local",
+                "status": true
+            },
+            "type": "FileTransfer",
+            "name": "SFTP_HISEC_S2HUB",
+            "status": true,
+            "message": "ConnectionProfile SFTP_HISEC_S2HUB successfully validated on agent ctm-lin-srv.demo.local"
+        },
+        {
+            "server": "ctm-lin-srv",
+            "agent": {
+                "name": "ctm-lin-srv.demo.local",
+                "status": true
+            },
+            "type": "FileTransfer",
+            "name": "SFTP_HISEC_S2SRV",
+            "status": true,
+            "message": "ConnectionProfile SFTP_HISEC_S2SRV successfully validated on agent ctm-lin-srv.demo.local"
+        },
+        {
+            "server": "ctm-lin-srv",
+            "agent": {
+                "name": "ctm-lin-hub.demo.local",
+                "status": true
+            },
+            "type": "FileTransfer",
+            "name": "SFTP_HISEC_FTG_HUB",
+            "status": true,
+            "message": "ConnectionProfile SFTP_HISEC_FTG_HUB successfully validated on agent ctm-lin-hub.demo.local"
+        },
+        {
+            "server": "ctm-lin-srv",
+            "agent": {
+                "name": "ctm-lin-hub.demo.local",
+                "status": true
+            },
+            "type": "FileTransfer",
+            "name": "SFTP_HISEC_FTG_SRV",
+            "status": false,
+            "message": "Error when Test Centralized Connection Profile"
+        },
+        {
+            "server": "ctm-lin-srv",
+            "agent": {
+                "name": "ctm-lin-hub.demo.local",
+                "status": true
+            },
+            "type": "FileTransfer",
+            "name": "SFTP_HISEC_H2AGT",
+            "status": false,
+            "message": "Error when Test Centralized Connection Profile"
+        },
+        {
+            "server": "ctm-lin-srv",
+            "agent": {
+                "name": "ctm-lin-hub.demo.local",
+                "status": true
+            },
+            "type": "FileTransfer",
+            "name": "SFTP_HISEC_H2EM",
+            "status": true,
+            "message": "ConnectionProfile SFTP_HISEC_H2EM successfully validated on agent ctm-lin-hub.demo.local"
+        },
+        {
+            "server": "ctm-lin-srv",
+            "agent": {
+                "name": "ctm-lin-hub.demo.local",
+                "status": true
+            },
+            "type": "FileTransfer",
+            "name": "SFTP_HISEC_H2GTW",
+            "status": true,
+            "message": "ConnectionProfile SFTP_HISEC_H2GTW successfully validated on agent ctm-lin-hub.demo.local"
+        },
+        {
+            "server": "ctm-lin-srv",
+            "agent": {
+                "name": "ctm-lin-hub.demo.local",
+                "status": true
+            },
+            "type": "FileTransfer",
+            "name": "SFTP_HISEC_H2HUB",
+            "status": true,
+            "message": "ConnectionProfile SFTP_HISEC_H2HUB successfully validated on agent ctm-lin-hub.demo.local"
+        },
+        {
+            "server": "ctm-lin-srv",
+            "agent": {
+                "name": "ctm-lin-hub.demo.local",
+                "status": true
+            },
+            "type": "FileTransfer",
+            "name": "SFTP_HISEC_H2SRV",
+            "status": true,
+            "message": "ConnectionProfile SFTP_HISEC_H2SRV successfully validated on agent ctm-lin-hub.demo.local"
+        },
+        {
+            "server": "ctm-lin-srv",
+            "agent": {
+                "name": "ctm-lin-srv.demo.local",
+                "status": true
+            },
+            "type": "FileTransfer",
+            "name": "ZZM_AWS_S3",
+            "status": true,
+            "message": "ConnectionProfile ZZM_AWS_S3 successfully validated on agent ctm-lin-srv.demo.local"
+        },
+        {
+            "server": "ctm-lin-srv",
+            "agent": {
+                "name": "ctm-lin-em.demo.local",
+                "status": true
+            },
+            "type": "FileTransfer",
+            "name": "ZZM_AWS_S3",
+            "status": true,
+            "message": "ConnectionProfile ZZM_AWS_S3 successfully validated on agent ctm-lin-em.demo.local"
+        },
+        {
+            "server": "ctm-lin-srv",
+            "agent": {
+                "name": "ctm-lin-hub.demo.local",
+                "status": true
+            },
+            "type": "FileTransfer",
+            "name": "ZZM_AWS_S3",
+            "status": true,
+            "message": "ConnectionProfile ZZM_AWS_S3 successfully validated on agent ctm-lin-hub.demo.local"
+        },
+        {
+            "server": "ctm-lin-srv",
+            "agent": {
+                "name": "ctm-lin-srv.demo.local",
+                "status": true
+            },
+            "type": "FileTransfer",
+            "name": "ZZM_AZURE",
+            "status": true,
+            "message": "ConnectionProfile ZZM_AZURE successfully validated on agent ctm-lin-srv.demo.local"
+        },
+        {
+            "server": "ctm-lin-srv",
+            "agent": {
+                "name": "ctm-lin-em.demo.local",
+                "status": true
+            },
+            "type": "FileTransfer",
+            "name": "ZZM_AZURE",
+            "status": true,
+            "message": "ConnectionProfile ZZM_AZURE successfully validated on agent ctm-lin-em.demo.local"
+        },
+        {
+            "server": "ctm-lin-srv",
+            "agent": {
+                "name": "ctm-lin-hub.demo.local",
+                "status": true
+            },
+            "type": "FileTransfer",
+            "name": "ZZM_AZURE",
+            "status": true,
+            "message": "ConnectionProfile ZZM_AZURE successfully validated on agent ctm-lin-hub.demo.local"
+        },
+        {
+            "server": "ctm-lin-srv",
+            "agent": {
+                "name": "ctm-lin-srv.demo.local",
+                "status": true
+            },
+            "type": "FileTransfer",
+            "name": "ZZM_GCS",
+            "status": true,
+            "message": "ConnectionProfile ZZM_GCS successfully validated on agent ctm-lin-srv.demo.local"
+        },
+        {
+            "server": "ctm-lin-srv",
+            "agent": {
+                "name": "ctm-lin-em.demo.local",
+                "status": true
+            },
+            "type": "FileTransfer",
+            "name": "ZZM_GCS",
+            "status": true,
+            "message": "ConnectionProfile ZZM_GCS successfully validated on agent ctm-lin-em.demo.local"
+        },
+        {
+            "server": "ctm-lin-srv",
+            "agent": {
+                "name": "ctm-lin-hub.demo.local",
+                "status": true
+            },
+            "type": "FileTransfer",
+            "name": "ZZM_GCS",
+            "status": true,
+            "message": "ConnectionProfile ZZM_GCS successfully validated on agent ctm-lin-hub.demo.local"
+        },
+        {
+            "server": "ctm-lin-srv",
+            "agent": {
+                "name": "ctm-lin-hub.demo.local",
+                "status": true
+            },
+            "type": "FileTransfer",
+            "name": "AS2_EDI",
+            "status": false,
+            "message": "Error when Test Centralized Connection Profile"
+        }
+    ]
+}
