@@ -54,8 +54,29 @@ It provides inventory checks, workflow validation, and monitoring to help the op
 
 #### Requirements
 
+- Control-M Enterprise Manager 
+    - Hostname
+    - Port
+    - Enterprise Manager Name
 - Control-M Automation API token
 - Network access to Control-M Enterprise Manager
+
+``` markdown
+    "CTM": {
+        "aapi": "",
+        "host": "ctm.demo.local",
+        "port": "443",
+        "environment": "engineer",
+        "em": "ctm-lin-em.demo.local",
+        "ssl": {
+            "InsecureRequestWarning": false
+        },
+        "mode": {
+            "inventory": false,
+            "monitoring": true
+        }
+    }
+```
 
 📌 Only for full-access repo, not in Community Edition
 
