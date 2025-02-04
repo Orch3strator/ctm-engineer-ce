@@ -30,7 +30,9 @@ It provides inventory checks, workflow validation, and monitoring to help the op
 ### Why This Project?
 
 🔹 Prevents workflow failures due to missing resources.
+
 🔹 Reduces operational downtime with proactive monitoring.
+
 🔹 Enhances reliability of Control-M job executions.
 
 # Installation & Configuration
