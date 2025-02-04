@@ -132,6 +132,31 @@ engineer -h
 engineer --help
 ```
 
+### Output Function
+
+Combine the output function with:
+- Inventory
+- Monitoring
+- Folders
+
+
+A log file is written to: 
+- C:\ProgramData\engineer\logs\engineer.log
+- /home/${USER}/.config/engineer/logs/engineer.log
+
+``` markdown title="Linux"
+engineer -o console
+```
+``` markdown title="Linux"
+engineer --output console
+```
+
+#### Result
+
+Print the data in json format to console.
+
+
+
 ### Expert Function
 
 The expert mode combines "monitoring" and "Folders".
@@ -151,7 +176,7 @@ engineer -expert -f <filter-name>
 
 The filter being applied is based on the engineer.json config file
 
-Example: [ctm-folders.json](example/ctm-folders.json)
+Example: [engineer.json](example/engineer.json)
 
 ``` markdown title="Filters"
 "FILTERS": {
