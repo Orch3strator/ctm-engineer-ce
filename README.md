@@ -42,9 +42,6 @@ A report is saved to:
 engineer -i
 ```
 
-``` markdown title="Windows"
-engineer.exe -i
-```
 
 ### Folders Function
 
@@ -57,10 +54,6 @@ A report is saved to:
 
 ``` markdown title="Linux"
 engineer -f
-```
-
-``` markdown title="Windows"
-engineer.exe -f
 ```
 
 #### Result
@@ -114,9 +107,6 @@ A report is saved to:
 engineer -m
 ```
 
-``` markdown title="Windows"
-engineer.exe -m
-```
 
 #### Result
 
@@ -132,9 +122,6 @@ A log file is written to:
 engineer -h
 ```
 
-``` markdown title="Windows"
-engineer.exe -h
-```
 
 ### Expert Function
 
@@ -148,9 +135,6 @@ A report is saved to:
 engineer -e -f <filter-name>
 ```
 
-``` markdown title="Windows"
-engineer.exe -e -f <filter-name>
-```
 
 
 #### Filter
@@ -158,6 +142,27 @@ engineer.exe -e -f <filter-name>
 The filter being applied is based on the engineer.json config file
 
 Example: [ctm-folders.json](example/ctm-folders.json)
+
+``` markdown title="Filters"
+"FILTERS": {
+        "types": [
+            {
+                "type": "folders",
+                "name": "ZZM",
+                "folder": "ZZM_UC_MULTI*",
+                "server": "ctm-lin-srv",
+                "agentMode": "hostgroups"
+            },
+            {
+                "type": "folders",
+                "name": "PRIVACY_GUARD",
+                "folder": "ZZM_UC_PRIVACY_GUARD",
+                "server": "ctm-lin-srv",
+                "agentMode": "hostgroups"
+            }
+        ]
+    }
+```
 
 #### Result
 
