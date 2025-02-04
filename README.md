@@ -41,7 +41,9 @@ A report is saved to:
 ``` markdown title="Linux"
 engineer -i
 ```
-
+``` markdown title="Linux"
+engineer --inventory
+```
 
 ### Folders Function
 
@@ -54,6 +56,9 @@ A report is saved to:
 
 ``` markdown title="Linux"
 engineer -f
+```
+``` markdown title="Linux"
+engineer --folders
 ```
 
 #### Result
@@ -106,7 +111,9 @@ A report is saved to:
 ``` markdown title="Linux"
 engineer -m
 ```
-
+``` markdown title="Linux"
+engineer --monitoring
+```
 
 #### Result
 
@@ -121,7 +128,9 @@ A log file is written to:
 ``` markdown title="Linux"
 engineer -h
 ```
-
+``` markdown title="Linux"
+engineer --help
+```
 
 ### Expert Function
 
@@ -134,8 +143,9 @@ A report is saved to:
 ``` markdown title="Linux"
 engineer -e -f <filter-name>
 ```
-
-
+``` markdown title="Linux"
+engineer -expert -f <filter-name>
+```
 
 #### Filter
 
