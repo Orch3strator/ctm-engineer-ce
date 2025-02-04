@@ -1,24 +1,68 @@
 # CTM Engineer
 
-Control-M Engineer
+Control-M Engineer - Control-M Pre-Execution Validation Tool
 
-## Managed File Transfer
+## Overview
+
+This project ensures that all required resources for scheduled Control-M workflows (folders) are available one hour before execution. 
+It provides inventory checks, workflow validation, and monitoring to help the operations team proactively address potential issues before the actual run.
+
+
+### Key Features
+
+✅ Inventory Management – Retrieve and review Control-M folders, workflows, and their dependencies.
+
+✅ Workflow Validation – Verify that required external connections (server, agents and centralized connection profiles) are operational.
+
+✅ Agent Availability Check – Ensure that Control-M agents executing the workflows are up and running.
+
+✅ Basic Monitoring – Track workflow execution and status.
+
+✅ Expert Mode – Provides deep monitoring, validating connections, agents, and workflow dependencies in a single execution.
+
+### Use Case
+
+- A business user schedules a folder/workflow for execution at a specific time.
+- This project pre-checks all required resources (agents, connections, workflows) one hour before the scheduled execution.
+- The operations team is notified if any critical resources are unavailable.
+- Ensures a smooth, error-free execution when the workflow runs.
+
+### Why This Project?
+
+🔹 Prevents workflow failures due to missing resources.
+🔹 Reduces operational downtime with proactive monitoring.
+🔹 Enhances reliability of Control-M job executions.
+
+# Installation & Configuration
+
+### Download & Release
+
+🚀 Latest Release: [engineer.zip](release/engineer.zip)
+
+
 
 ### Configuration
 
-The CTM Engineer is driven by the command arguments and a config file located:
+📌 The CTM Engineer is driven by the command arguments and a config file located:
+
 - Windows: C:\ProgramData\engineer\configs
 - Linux: /home/${USER}/.config/engineer/configs/engineer.json
 
-Example: [engineer.json](example/engineer.json)
+📂 Example: [engineer.json](example/engineer.json)
 
 #### Requirements
 
-- Python 3.1x
 - Control-M Automation API token
 - Network access to Control-M Enterprise Manager
 
+📌 Only for full-access repo, not in Community Edition
+
+- Python 3.1x
+
+
 #### Build and Package
+
+📌 Only part of full-access repo, not in Community Edition
 
 ``` markdown title="Linux"
 pyinstaller --clean engineer.lin.spec --noconfirm
@@ -28,12 +72,15 @@ pyinstaller --clean engineer.lin.spec --noconfirm
 pyinstaller --clean engineer.win.spec --noconfirm
 ```
 
+## Usage & Commands
 
 ### Inventory Function
 
-Get an inventory of your Control-M resources, focused on Managed File Transfer.
+📌 Get an inventory of your Control-M resources, focused on Managed File Transfer.
 
-A report is saved to:
+
+👉 Output is saved to:
+
 - C:\ProgramData\engineer\data\ctm-inventory.json
 - /home/${USER}/.config/engineer/data/ctm-inventory.json
 
@@ -47,9 +94,10 @@ engineer --inventory
 
 ### Folders Function
 
-Get an inventory of your Control-M Folders, focused on Managed File Transfer.
+📌 Get an inventory of your Control-M Folders, focused on Managed File Transfer.
 
-A report is saved to:
+👉 Output is saved to:
+
 - C:\ProgramData\engineer\data\ctm-folders.json
 - /home/${USER}/.config/engineer/data/ctm-folders.json
 
@@ -61,15 +109,15 @@ engineer -f
 engineer --folders
 ```
 
-#### Result
+#### Output
 
-Example: [ctm-folders.json](example/ctm-folders.json)
+📂 Example: [ctm-folders.json](example/ctm-folders.json)
 
 #### Filter
 
 The filter being applied is based on the engineer.json config file
 
-Example: [engineer.json](example/engineer.json)
+📂 Example: [engineer.json](example/engineer.json)
 
 ``` markdown title="Filters"
 "FILTERS": {
@@ -94,16 +142,20 @@ Example: [engineer.json](example/engineer.json)
 
 ### Monitoring Function
 
-Get the agent and CCP status of your Control-M Servers, focused on Managed File Transfer.
+📌 Get the agent and CCP status of your Control-M Servers, focused on Managed File Transfer.
 
-- Get List of Control-M Servers
-- For each Server, get:
-    - Agents
-    - CCP
-- Ping each Agent
-- Test CCP with live Agent
+👉 What it checks:
 
-A report is saved to:
+✅ List Control-M Servers
+
+✅ Retrieve Agents & CCP
+
+✅ Ping each Agent
+
+✅ Test CCP with a live Agent
+
+👉 Output is saved to:
+
 - C:\ProgramData\engineer\data\ctm-monitoring.json
 - /home/${USER}/.config/engineer/data/ctm-monitoring.json
 
@@ -117,11 +169,14 @@ engineer --monitoring
 
 #### Result
 
-Example: [ctm-monitoring.json](example/ctm-monitoring.json)
+📂 Example: [ctm-monitoring.json](example/ctm-monitoring.json)
 
 ### Help Function
 
+📌 Get command help documentation
+
 A log file is written to: 
+
 - C:\ProgramData\engineer\logs\engineer.log
 - /home/${USER}/.config/engineer/logs/engineer.log
 
@@ -134,13 +189,15 @@ engineer --help
 
 ### Output Function
 
-Combine the output function with:
+📌 Combine the output function with:
+
 - Inventory
 - Monitoring
 - Folders
 
 
-A log file is written to: 
+📂 Logs: Log file are written to: 
+
 - C:\ProgramData\engineer\logs\engineer.log
 - /home/${USER}/.config/engineer/logs/engineer.log
 
@@ -159,9 +216,10 @@ Print the data in json format to console.
 
 ### Expert Function
 
-The expert mode combines "monitoring" and "Folders".
+📌 The expert mode combines "monitoring" and "Folders".
 
-A report is saved to:
+👉 Output is saved to:
+
 - C:\ProgramData\engineer\data\<filter-name>ctm-expert.json
 - /home/${USER}/.config/engineer/data/<filter-name>ctm-expert.json
 
@@ -176,7 +234,7 @@ engineer -expert -f <filter-name>
 
 The filter being applied is based on the engineer.json config file
 
-Example: [engineer.json](example/engineer.json)
+📂 Example: [engineer.json](example/engineer.json)
 
 ``` markdown title="Filters"
 "FILTERS": {
@@ -201,13 +259,13 @@ Example: [engineer.json](example/engineer.json)
 
 #### Result
 
-Example: [<filter-name>ctm-expert.json](example/privacy_guard-ctm-expert.json)
+📂 Example: [<filter-name>ctm-expert.json](example/privacy_guard-ctm-expert.json)
 
 ## Control-M AAPI
 
-- Using the Config service, you can access, update, and add configuration data for the major components of the Control-M environment.
+📌 Using the Config service, you can access, update, and add configuration data for the major components of the Control-M environment.
 
-- The deploy service allows you to transfer job and configuration definitions to Control-M. Once a job is deployed, it will be scheduled by Control-M according to its scheduling criteria and dependencies. The deploy overwrites any existing definition of the same name. 
+📌 The deploy service allows you to transfer job and configuration definitions to Control-M. Once a job is deployed, it will be scheduled by Control-M according to its scheduling criteria and dependencies. The deploy overwrites any existing definition of the same name. 
 
 ### Deploy Service
 
@@ -345,5 +403,8 @@ ctm deploy connectionprofile:centralized::test <type> <name> <server> <agent>
 Filter applied: type=FileTransfer
 
 
+# Conclusion
 
+CTM Engineer is a proactive solution designed to reduce workflow failures, minimize downtime, and enhance Control-M job execution reliability.
 
+🚀 Get started today and streamline your Control-M workflow validation process! 🚀
